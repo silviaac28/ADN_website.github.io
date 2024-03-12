@@ -4,6 +4,8 @@ const analisisADNInput = document.getElementById('analisisADN')
 
 
 
+
+
 const formCiudadanos=()=>{
     homeInput.style.display="none";
     formCiudadanosInput.style.display="block";

@@ -60,17 +60,24 @@ const Comparar = () => {
         let contador3 = 0
         let posicionMayor3 = 0
 
+        let contador4 = 0
+        let posicionMayor4 = 0
+
+
+
 
 
         let listaSospechosos1 = listaSospechosos
         listaSospechosos2 = listaSospechosos1
         listaSospechosos3 = listaSospechosos2
         listaSospechosos4 = listaSospechosos3
+        listaSospechosos5 = listaSospechosos4
 
         mayorcoincidencia = 0;
         mayorcoincidencia1 = 0;
         mayorcoincidencia2 = 0;
         mayorcoincidencia3 = 0;
+        mayorcoincidencia4 = 0;
 
 
 
@@ -153,18 +160,47 @@ console.log(posicionMayor3);
 
 listaSospechosos4[posicionMayor3] = 0;
 console.log(listaSospechosos4);
+
+
+for (const sospechoso of listaSospechosos4){
+         
+    if (sospechoso > mayorcoincidencia4){
+       posicionMayor4 = contador4;
+       mayorcoincidencia4 = sospechoso;
+   //console.log(mayorcoincidencia)
+   //console.log(sospechoso)
+   //console.log(contador)
+}
+//console.log(posicionMayor)
+   contador4 = contador4+1
+}
+
+console.log(posicionMayor4); 
+
+
+
+
 const tablaCulpablesInput=document.getElementById("tablaCulpables");
     let datos = '';
   
         datos+=`<tr>
 
         <td>${listaCiudadanos[posicionMayor].nombre_completo}</td>
+        <td>${mayorcoincidencia}</td>
         </tr>
         <tr>
         <td>${listaCiudadanos[posicionMayor1].nombre_completo}</td>
+        <td>${mayorcoincidencia1}</td>
         </tr>
         <tr>
         <td>${listaCiudadanos[posicionMayor2].nombre_completo}</td>
+        <td>${mayorcoincidencia2}</td>
+        </tr>
+        <td>${listaCiudadanos[posicionMayor3].nombre_completo}</td>
+        <td>${mayorcoincidencia3}</td>
+        </tr>
+        <td>${listaCiudadanos[posicionMayor4].nombre_completo}</td>
+        <td>${mayorcoincidencia4}</td>
         </tr>`
             
  
