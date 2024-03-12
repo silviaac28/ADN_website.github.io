@@ -14,5 +14,7 @@ const analisisADN=()=>{
     homeInput.style.display="none";
     formCiudadanosInput.style.display="none";
     analisisADNInput.style.display="block";
+
+    cargarTablaSospechosos();
 }
 

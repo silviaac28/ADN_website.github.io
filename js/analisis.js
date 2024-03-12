@@ -7,6 +7,8 @@ const verCulpable=()=>{
 
 listaSospechosos = []
 
+principalesSospechosos = []
+
 const Comparar = () => {
 
     var adncriminal =  (document.getElementById("secuenciaHallada").value);
@@ -151,8 +153,35 @@ console.log(posicionMayor3);
 
 listaSospechosos4[posicionMayor3] = 0;
 console.log(listaSospechosos4);
+const tablaCulpablesInput=document.getElementById("tablaCulpables");
+    let datos = '';
+  
+        datos+=`<tr>
+
+        <td>${listaCiudadanos[posicionMayor].nombre_completo}</td>
+        </tr>
+        <tr>
+        <td>${listaCiudadanos[posicionMayor1].nombre_completo}</td>
+        </tr>
+        <tr>
+        <td>${listaCiudadanos[posicionMayor2].nombre_completo}</td>
+        </tr>`
+            
+ 
+
+        tablaCulpablesInput.innerHTML=datos;
 }
 
 
+principalesSospechosos = [posicionMayor, posicionMayor1, posicionMayor2, posicionMayor3]
+
+
+
+
+
+const cargarTablaSospechosos=()=>{
+    
+
+}
 
 
