@@ -1,0 +1,37 @@
+/* NAV BARRRRRRR*/
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #desp{
+    height: 10vh;
+  }
+
+.navbar  {
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+}
+
+.navbar-navbar-inverse{
+  background-color: rgba(0, 0, 0, 0.886);
+}
+
+.navbar-navbar-inverse li a{
+  color: rgb(146, 143, 171);
+}
+
+
+.container4 h2{
+    margin-left: 20vw;
+}
+
+#listaCulpable h2{
+    text-align: center;
+}
