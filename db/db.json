@@ -119,13 +119,6 @@
       "direccion": "Avenida QRS, Ciudad B",
       "celular": "555-5671",
       "codigo_adn": "10000000001111111111"
-    },
-    {
-      "id": "da19",
-      "nombre_completo": "SIlvia",
-      "direccion": "Cra 80 45",
-      "celular": "999",
-      "codigo_adn": "1010"
     }
   ]
 }
